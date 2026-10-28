@@ -13,8 +13,7 @@
   <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0"><img alt="Hugging Face: Apexintelligence-AI" src="https://img.shields.io/static/v1?label=Hugging+Face&amp;message=Apexintelligence-AI&amp;color=FFC107&amp;labelColor=555555&amp;style=flat&amp;logo=huggingface&amp;logoColor=white" height="20"></a>
 </div>
 <div align="center" style="line-height: 1;">
-  <!-- Placeholder blog URL; replace when the article is published. -->
-  <a href="https://www.apexin.com/blog/apex-35b-v1"><img alt="Blog: Apex-35B-V1.0" src="https://img.shields.io/static/v1?label=Blog&amp;message=Apex-35B-V1.0&amp;color=7C3AED&amp;labelColor=555555&amp;style=flat&amp;logo=readme&amp;logoColor=white" height="20"></a>
+  <a href="https://www.apexin.com/apex-35b/"><img alt="Blog: Apex-35B-V1.0" src="https://img.shields.io/static/v1?label=Blog&amp;message=Apex-35B-V1.0&amp;color=7C3AED&amp;labelColor=555555&amp;style=flat&amp;logo=readme&amp;logoColor=white" height="20"></a>
   <a href="https://x.com/apexin_ai"><img alt="Twitter: apexin_ai" src="https://img.shields.io/static/v1?label=Twitter&amp;message=apexin_ai&amp;color=E5E7EB&amp;labelColor=555555&amp;style=flat&amp;logo=x&amp;logoColor=white" height="20"></a>
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/static/v1?label=License&amp;message=Apache+2.0&amp;color=2EA44F&amp;labelColor=555555&amp;style=flat" height="20"></a>
 </div>
