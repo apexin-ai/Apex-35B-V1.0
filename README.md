@@ -14,6 +14,7 @@
 </div>
 <div align="center" style="line-height: 1;">
   <a href="https://www.apexin.com/apex-35b/"><img alt="Blog: Apex-35B-V1.0" src="https://img.shields.io/static/v1?label=Blog&amp;message=Apex-35B-V1.0&amp;color=7C3AED&amp;labelColor=555555&amp;style=flat&amp;logo=readme&amp;logoColor=white" height="20"></a>
+  <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF"><img alt="GGUF: BF16 + 28 quantizations" src="https://img.shields.io/static/v1?label=GGUF&amp;message=BF16+%2B+28+quantizations&amp;color=F97316&amp;labelColor=555555&amp;style=flat" height="20"></a>
   <a href="https://x.com/apexin_ai"><img alt="Twitter: apexin_ai" src="https://img.shields.io/static/v1?label=Twitter&amp;message=apexin_ai&amp;color=E5E7EB&amp;labelColor=555555&amp;style=flat&amp;logo=x&amp;logoColor=white" height="20"></a>
   <a href="LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/static/v1?label=License&amp;message=Apache+2.0&amp;color=2EA44F&amp;labelColor=555555&amp;style=flat" height="20"></a>
 </div>
@@ -23,6 +24,8 @@
 **Apex-35B-V1.0** is the first model from **Apex Intelligence**, developed for both general-purpose use and research and supported by the [**Claude Code**](https://github.com/anthropics/claude-code) (v2.1.280 preferred) harness. It combines coding, tool use, question answering, and deep search with research tasks in AI, computational science, and robotics simulation.
 
 Built on [Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B), the model is further trained on proprietary datasets and research trajectories. Its development incorporates recursive self-improvement (RSI) through **Apex Research**, an automated research system that contributes to training-data construction, automated experiments, training-recipe exploration, GPU kernel optimization, and inference optimization. Validated results from this process feed into subsequent development.
+
+GGUF builds for llama.cpp, Unsloth, and other local runtimes are available in [Apex-35B-V1.0-GGUF](https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF): BF16 and 28 quantizations, from Q8_0 (37.8 GB) to IQ1_S (9.0 GB).
 
 ### Key Features
 
@@ -125,7 +128,14 @@ The table below provides the per-benchmark breakdown, grouped by task category, 
   </thead>
   <tbody>
     <tr><td align="center">Apex-35B-V1.0</td><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0">🤗 Hugging Face</a></td><td align="center">35B in total, 3B activated</td><td align="center">BF16 safetensors (about 72 GB)</td></tr>
-    <tr><td align="center">Apex-35B-V1.0-GGUF</td><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF">🤗 Hugging Face</a></td><td align="center">35B in total, 3B activated</td><td align="center">GGUF: BF16 and 28 quantizations, from Q8_0 (37.8 GB) to IQ1_S (9.0 GB)</td></tr>
+    <tr><td align="center" rowspan="8">Apex-35B-V1.0-GGUF</td><td align="center" rowspan="8"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF">🤗 Hugging Face</a></td><td align="center" rowspan="8">35B in total, 3B activated</td><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-BF16-00001-of-00002.gguf">BF16</a> (71.1 GB, 2 files)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q8_0.gguf">Q8_0</a> (37.8 GB)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q6_K_L.gguf">Q6_K_L</a> (32.8 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q6_K_S.gguf">Q6_K_S</a> (29.9 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q6_K.gguf">Q6_K</a> (29.2 GB)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q5_K_S.gguf">Q5_K_S</a> (25.6 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q5_K_M.gguf">Q5_K_M</a> (25.3 GB)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q4_K_L.gguf">Q4_K_L</a> (24.6 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ4_NL.gguf">IQ4_NL</a> (22.8 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q4_1.gguf">Q4_1</a> (22.4 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q4_K_M.gguf">Q4_K_M</a> (21.7 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q4_K_S.gguf">Q4_K_S</a> (21.4 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q4_0.gguf">Q4_0</a> (20.4 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ4_XS.gguf">IQ4_XS</a> (20.4 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-MXFP4_MOE.gguf">MXFP4_MOE</a> (20.3 GB)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ3_M.gguf">IQ3_M</a> (19.4 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q3_K_L.gguf">Q3_K_L</a> (18.7 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ3_S.gguf">IQ3_S</a> (18.1 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q3_K_M.gguf">Q3_K_M</a> (17.8 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ3_XS.gguf">IQ3_XS</a> (16.8 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q3_K_S.gguf">Q3_K_S</a> (16.8 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ3_XXS.gguf">IQ3_XXS</a> (16.1 GB)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-Q2_K.gguf">Q2_K</a> (14.3 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ2_M.gguf">IQ2_M</a> (13.7 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ2_S.gguf">IQ2_S</a> (12.5 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ2_XS.gguf">IQ2_XS</a> (11.7 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ2_XXS.gguf">IQ2_XXS</a> (11.3 GB)</td></tr>
+    <tr><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ1_M.gguf">IQ1_M</a> (9.9 GB), <a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF/blob/main/Apex-35B-V1.0-IQ1_S.gguf">IQ1_S</a> (9.0 GB)</td></tr>
   </tbody>
 </table>
 </div>
@@ -257,7 +267,7 @@ transformers serve Apexintelligence-AI/Apex-35B-V1.0 --port 8000
 
 #### llama.cpp and Unsloth
 
-GGUF builds for llama.cpp, Unsloth, and other local runtimes are in [Apex-35B-V1.0-GGUF](https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF): BF16, Q8_0, Q6_K_L, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_K_L, Q4_K_M, Q4_K_S, Q4_1, Q4_0, IQ4_NL, IQ4_XS, MXFP4_MOE, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_M, IQ3_S, IQ3_XS, IQ3_XXS, Q2_K, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ1_M, and IQ1_S. For example, with a recent [llama.cpp](https://github.com/ggml-org/llama.cpp) build (`llama-server` on `PATH`):
+GGUF builds for llama.cpp, Unsloth, and other local runtimes are in [Apex-35B-V1.0-GGUF](https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF); the [Download Model](#download-model) table lists all files. For example, with a recent [llama.cpp](https://github.com/ggml-org/llama.cpp) build (`llama-server` on `PATH`):
 
 ```bash
 hf download Apexintelligence-AI/Apex-35B-V1.0-GGUF Apex-35B-V1.0-Q4_K_M.gguf --local-dir .
