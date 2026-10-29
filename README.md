@@ -125,7 +125,7 @@ The table below provides the per-benchmark breakdown, grouped by task category, 
   </thead>
   <tbody>
     <tr><td align="center">Apex-35B-V1.0</td><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0">🤗 Hugging Face</a></td><td align="center">35B in total, 3B activated</td><td align="center">BF16 safetensors (about 72 GB)</td></tr>
-    <tr><td align="center">Apex-35B-V1.0-GGUF</td><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF">🤗 Hugging Face</a></td><td align="center">35B in total, 3B activated</td><td align="center">GGUF: BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M</td></tr>
+    <tr><td align="center">Apex-35B-V1.0-GGUF</td><td align="center"><a href="https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF">🤗 Hugging Face</a></td><td align="center">35B in total, 3B activated</td><td align="center">GGUF: BF16 and 28 quantizations, from Q8_0 (37.8 GB) to IQ1_S (9.0 GB)</td></tr>
   </tbody>
 </table>
 </div>
@@ -257,7 +257,7 @@ transformers serve Apexintelligence-AI/Apex-35B-V1.0 --port 8000
 
 #### llama.cpp and Unsloth
 
-GGUF builds (BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M) for llama.cpp, Unsloth, and other local runtimes are in [Apex-35B-V1.0-GGUF](https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF). For example, with a recent [llama.cpp](https://github.com/ggml-org/llama.cpp) build (`llama-server` on `PATH`):
+GGUF builds for llama.cpp, Unsloth, and other local runtimes are in [Apex-35B-V1.0-GGUF](https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0-GGUF): BF16, Q8_0, Q6_K_L, Q6_K, Q6_K_S, Q5_K_M, Q5_K_S, Q4_K_L, Q4_K_M, Q4_K_S, Q4_1, Q4_0, IQ4_NL, IQ4_XS, MXFP4_MOE, Q3_K_L, Q3_K_M, Q3_K_S, IQ3_M, IQ3_S, IQ3_XS, IQ3_XXS, Q2_K, IQ2_M, IQ2_S, IQ2_XS, IQ2_XXS, IQ1_M, and IQ1_S. For example, with a recent [llama.cpp](https://github.com/ggml-org/llama.cpp) build (`llama-server` on `PATH`):
 
 ```bash
 hf download Apexintelligence-AI/Apex-35B-V1.0-GGUF Apex-35B-V1.0-Q4_K_M.gguf --local-dir .
